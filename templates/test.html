@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{username}}</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #00b4db, #0083b0);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      padding: 15px 25px;
+      text-decoration: none;
+      color: #333;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #eaeaea;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #0083b0;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background-color: #f9f9f9;
+      padding: 60px 20px;
+      border-radius: 8px;
+    }
+
+    .about h2 {
+      color: #0083b0;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background-color: #0083b0;
+      color: white;
+    }
+
+    footer a {
+      color: #00b4db;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        border-top: 1px solid #ddd;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{username}}</h1>
+    <p>Empowering Businesses with Smart Digital Tools</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At Bright Solutions, we believe technology should simplify your work, not complicate it. Our team creates tailored digital solutions that help businesses grow, streamline operations, and connect better with their customers.</p>
+  </section>
+
+  <section id="services">
+    <h2 style="color:#0083b0; margin-bottom:20px;">Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Modern, responsive websites designed for impact and optimized for performance.</p>
+      </div>
+      <div class="card">
+        <h3>Mobile Apps</h3>
+        <p>Intuitive, cross-platform mobile applications that engage and retain users.</p>
+      </div>
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>Grow your online presence with targeted campaigns and smart SEO strategies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="color:#0083b0;">Get in Touch</h2>
+    <p>We’d love to hear from you! Email us at 
+      <a href="mailto:info@brightsolutions.com">info@brightsolutions.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Bright Solutions • Built with passion and purpose</p>
+  </footer>
+</body>
+</html>
